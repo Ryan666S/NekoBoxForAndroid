@@ -28,7 +28,7 @@ jobs:
       - name: Native Build
         if: steps.cache.outputs.cache-hit != 'true'
         run: ./run lib core
-              - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: libcore-aar
           path: app/libs/libcore.aar
